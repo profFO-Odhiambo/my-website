@@ -19,9 +19,24 @@
       text-align: center;
     }
 
+    header {
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #0077b6;
+    }
+
     h1 {
       font-family: 'Merriweather', serif;
-      font-size: 3em;
+      font-size: 2.5em;
       color: #2c3e50;
       margin-bottom: 20px;
     }
@@ -32,22 +47,54 @@
       font-size: 1.2em;
     }
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #2c3e50;
-      font-weight: bold;
+    .profile {
+      margin: 30px auto;
+    }
+
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #2c3e50;
+    }
+
+    .tagline {
+      font-family: 'Merriweather', serif;
+      font-size: 1.5em;
+      margin-top: 15px;
+      color: #0077b6;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>Hello, I’m Felix Odhiambo — a science tutor passionate about physics, research, and discovery. Explore my pages to learn more about me and my journey.</p>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <h1>Welcome to My Website</h1>
+  <p>Hello, I’m <strong>Felix Odhiambo</strong> — a science tutor passionate about physics, research, and discovery. Explore my pages to learn more about me, my journey, and my interests both in and outside the classroom.</p>
+
+  <!-- Photo + Tagline Section (after welcome message) -->
+  <div class="profile">
+    <img src="me.jpg" alt="Felix Odhiambo">
+    <div class="tagline">"CURIOS MIND | ASPIRING SCIENTIST | LIFELONG LEARNER | FUTURE INNOVATOR”</div>
+  </div>
+
+  <p>This site is my personal space to share ideas, academic projects, and thoughts about science and learning. Feel free to connect through my contact page — I’d love to hear from you!</p>
+
+  <footer>
+    <p>&copy; 2025 Felix Odhia. All rights reserved.</p>
+  </footer>
 </body>
 </html>
