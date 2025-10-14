@@ -72,7 +72,7 @@
       color: #777;
     }
 
-    /* LinkedIn Badge — small, clean, top-right */
+    /* LinkedIn Badge — top-right, transparent, and small */
     .linkedin-badge {
       position: fixed;
       top: 20px;
@@ -80,7 +80,13 @@
       z-index: 9999;
       transform: scale(0.85);
       transform-origin: top right;
+      opacity: 0.85; /* transparency */
+      transition: opacity 0.3s ease;
       pointer-events: auto;
+    }
+
+    .linkedin-badge:hover {
+      opacity: 1; /* becomes fully visible when hovered */
     }
 
     .linkedin-badge iframe {
@@ -112,7 +118,7 @@
     </nav>
   </header>
 
-  <!-- LinkedIn Badge in the corner -->
+  <!-- LinkedIn Badge -->
   <div class="linkedin-badge">
     <div class="badge-base LI-profile-badge"
       data-locale="en_US"
